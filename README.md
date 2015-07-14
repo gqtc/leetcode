@@ -9,6 +9,8 @@ https://leetcode.com
 
 (11)Container With Most Water: http://blog.csdn.net/gqtcgq/article/details/46859687
 
-(22)Generate Parentheses: 
+(22)Generate Parentheses: http://blog.csdn.net/gqtcgq/article/details/46875417
+
+(23)Merge k Sorted Lists: 
 
 (32)Longest Valid Parentheses: http://blog.csdn.net/gqtcgq/article/details/46827833
