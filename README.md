@@ -11,6 +11,8 @@ https://leetcode.com
 
 (22)Generate Parentheses: http://blog.csdn.net/gqtcgq/article/details/46875417
 
-(23)Merge k Sorted Lists: 
+(23)Merge k Sorted Lists: http://blog.csdn.net/gqtcgq/article/details/46881577
+
+(25)Reverse Nodes in k-Group: 
 
 (32)Longest Valid Parentheses: http://blog.csdn.net/gqtcgq/article/details/46827833
