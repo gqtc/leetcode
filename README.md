@@ -15,4 +15,6 @@ https://leetcode.com
 
 (25)Reverse Nodes in k-Group: http://blog.csdn.net/gqtcgq/article/details/46884673
 
+(26)Remove Duplicates from Sorted Array: http://blog.csdn.net/gqtcgq/article/details/46895471
+
 (32)Longest Valid Parentheses: http://blog.csdn.net/gqtcgq/article/details/46827833
