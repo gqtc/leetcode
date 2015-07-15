@@ -13,6 +13,6 @@ https://leetcode.com
 
 (23)Merge k Sorted Lists: http://blog.csdn.net/gqtcgq/article/details/46881577
 
-(25)Reverse Nodes in k-Group: 
+(25)Reverse Nodes in k-Group: http://blog.csdn.net/gqtcgq/article/details/46884673
 
 (32)Longest Valid Parentheses: http://blog.csdn.net/gqtcgq/article/details/46827833
