@@ -17,6 +17,8 @@ https://leetcode.com
 
 (26)Remove Duplicates from Sorted Array: http://blog.csdn.net/gqtcgq/article/details/46895471
 
-(29)Divide Two Integers: 
+(29)Divide Two Integers: http://blog.csdn.net/gqtcgq/article/details/46909991
+
+(30)Substring with Concatenation of All Words: 
 
 (32)Longest Valid Parentheses: http://blog.csdn.net/gqtcgq/article/details/46827833
