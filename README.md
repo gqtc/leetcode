@@ -19,6 +19,8 @@ https://leetcode.com
 
 (29)Divide Two Integers: http://blog.csdn.net/gqtcgq/article/details/46909991
 
-(30)Substring with Concatenation of All Words: 
+(30)Substring with Concatenation of All Words: http://blog.csdn.net/gqtcgq/article/details/46915855
 
 (32)Longest Valid Parentheses: http://blog.csdn.net/gqtcgq/article/details/46827833
+
+(33)Search in Rotated Sorted Array: 
