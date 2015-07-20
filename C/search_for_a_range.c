@@ -1,17 +1,14 @@
 /*****************************************************
-Implement next permutation, which rearranges numbers into the 
-lexicographically next greater permutation of numbers.
+Given a sorted array of integers, find the starting and ending position 
+of a given target value.
 
-If such arrangement is not possible, it must rearrange it as the lowest 
-possible order (ie, sorted in ascending order).
+Your algorithm's runtime complexity must be in the order of O(log n).
 
-The replacement must be in-place, do not allocate extra memory.
+If the target is not found in the array, return [-1, -1].
 
-Here are some examples. Inputs are in the left-hand column and 
-its corresponding outputs are in the right-hand column.
-1,2,3 ¡ú 1,3,2
-3,2,1 ¡ú 1,2,3
-1,1,5 ¡ú 1,5,1
+For example,
+Given [5, 7, 7, 8, 8, 10] and target value 8,
+return [3, 4].
 
 *******************************************************/
 #include <stdio.h>
