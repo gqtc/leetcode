@@ -23,4 +23,6 @@ https://leetcode.com
 
 (32)Longest Valid Parentheses: http://blog.csdn.net/gqtcgq/article/details/46827833
 
-(33)Search in Rotated Sorted Array: 
+(33)Search in Rotated Sorted Array: http://blog.csdn.net/gqtcgq/article/details/46959489
+
+(34)Search for a Range: 
