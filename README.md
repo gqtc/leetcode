@@ -26,3 +26,5 @@ https://leetcode.com
 12(33)Search in Rotated Sorted Array: http://blog.csdn.net/gqtcgq/article/details/46959489
 
 13(34)Search for a Range: http://blog.csdn.net/gqtcgq/article/details/46966759
+
+14(37)Sudoku Solver: http://blog.csdn.net/gqtcgq/article/details/47112377
