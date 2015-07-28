@@ -18,24 +18,24 @@ typedef struct
 
 typedef struct
 {
-    node **sets;
-    int len;
-    int top;
+	node **sets;
+	int len;
+	int top;
 }Stack;
 
 int push(Stack *s, node *key)
 {
-    if(s->top >= s->len)  return -1;
+	if(s->top >= s->len)  return -1;
 
-    s->sets[s->top ++] = key;
-   
-    return 0;
+	s->sets[s->top ++] = key;
+
+	return 0;
 }
 
 node *pop(Stack *s)
 {
-    if(s->top == 0)   return NULL;
-    return s->sets[-- s->top];
+	if(s->top == 0)   return NULL;
+	return s->sets[-- s->top];
 }
 
 Stack *initstack(int stlen)
@@ -60,40 +60,40 @@ void freestack(Stack *s)
 
 int isSafe(char** board, int boardRowSize, int boardColSize, node *top) 
 {
-    int i, j, value;
-    int tmp = -1;
-    i = top->i;
-    j = top->j;
-    value = top->value;
+	int i, j, value;
+	int tmp = -1;
+	i = top->i;
+	j = top->j;
+	value = top->value;
 
-    int m, n;
-    for(m = 0; m < boardColSize; m++)
-    {
-    	if(m == j)	continue;
-        tmp = board[i][m] - '0';
-        if(tmp == value)	return 0;
-   	}
+	int m, n;
+	for(m = 0; m < boardColSize; m++)
+	{
+		if(m == j)	continue;
+		tmp = board[i][m] - '0';
+		if(tmp == value)	return 0;
+	}
 
-    for(m = 0; m < boardRowSize; m++)
-    {
-    	if(m == i)	continue;
-        tmp = board[m][j] - '0';
-        if(tmp == value)	return 0;
-   	}
+	for(m = 0; m < boardRowSize; m++)
+	{
+		if(m == i)	continue;
+		tmp = board[m][j] - '0';
+		if(tmp == value)	return 0;
+	}
 
-    int lineend = i/3 * 3 + 3;
-    int colend = j/3 * 3 + 3;
-    for(m = i/3 * 3; m < lineend; m++)
-    {
-        for(n = j/3 * 3; n < colend; n++)
-        {
-        	if(m == i && n == j)	continue;
-            tmp = board[m][n] - '0';
+	int lineend = i/3 * 3 + 3;
+	int colend = j/3 * 3 + 3;
+	for(m = i/3 * 3; m < lineend; m++)
+	{
+		for(n = j/3 * 3; n < colend; n++)
+		{
+			if(m == i && n == j)	continue;
+			tmp = board[m][n] - '0';
 			if(tmp == value)	return 0;
-        }
-    }
+		}
+	}
 
-    return 1;
+	return 1;
 }
 
 void solveSudoku_loop(char **board, int boardRowSize, int boardColSize)
@@ -101,20 +101,20 @@ void solveSudoku_loop(char **board, int boardRowSize, int boardColSize)
 	int i, j, tmp;
 	Stack *s = initstack(81);
 	node *top = NULL;
-	
+
 	for(i = 0; i < boardRowSize; i++)
 	{
 		for(j = 0; j < boardColSize; j++)
 		{
-            if(board[i][j] == '.')
-            {
-            	node *newnode = calloc(1, sizeof(node));
-            	newnode->i = i;
-            	newnode->j = j;
-            	newnode->value = 1;
-            	board[i][j] = newnode->value + '0';
-            	push(s, newnode);
-            	top = newnode;
+			if(board[i][j] == '.')
+			{
+				node *newnode = calloc(1, sizeof(node));
+				newnode->i = i;
+				newnode->j = j;
+				newnode->value = 1;
+				board[i][j] = newnode->value + '0';
+				push(s, newnode);
+				top = newnode;
 				while(isSafe(board, boardRowSize, boardColSize, top) == 0)
 				{
 					top = pop(s);
@@ -136,7 +136,7 @@ void solveSudoku_loop(char **board, int boardRowSize, int boardColSize)
 				}
 				i = top->i;
 				j = top->j;
-            }
+			}
 		}
 	}
 	freestack(s);
@@ -164,7 +164,7 @@ int findemptyblank(char **board, int boardRowSize, int boardColSize, int *i, int
 int solveSudoku_recurse(char **board, int boardRowSize, int boardColSize)
 {
 	int i, j, k;
-	
+
 	if(findemptyblank(board, boardRowSize, boardColSize, &i, &j) == 0)
 	{
 		return 1;
@@ -176,15 +176,15 @@ int solveSudoku_recurse(char **board, int boardRowSize, int boardColSize)
 	
 	for(k = 1; k <= 9; k++)
 	{
-    	newnode.value = k;
-    	if(isSafe(board, boardRowSize, boardColSize, &newnode))
-    	{
-    		board[i][j] = k + '0';
+		newnode.value = k;
+		if(isSafe(board, boardRowSize, boardColSize, &newnode))
+		{
+			board[i][j] = k + '0';
 			if(solveSudoku_recurse(board, boardRowSize, boardColSize))
 			{
 				return 1;
 			}
-    	}
+		}
 	}
 	board[i][j] = '.';
 	return 0;
@@ -193,37 +193,37 @@ int solveSudoku_recurse(char **board, int boardRowSize, int boardColSize)
 
 int isValidSudoku(char** board, int boardRowSize, int boardColSize) 
 {
-    int hashline[10][10];
-    int hashcol[10][10];
-    int hashzone[10][10];
-    int i, j;
-    int tmp = -1;
-    int zone = -1;
-    for(i = 0; i < 10; i++)
-    {
-        for(j = 0; j < 10; j++)
-        {
-            hashline[i][j] = hashcol[i][j] = hashzone[i][j] = 0;
-        }
-    }
+	int hashline[10][10];
+	int hashcol[10][10];
+	int hashzone[10][10];
+	int i, j;
+	int tmp = -1;
+	int zone = -1;
+	for(i = 0; i < 10; i++)
+	{
+		for(j = 0; j < 10; j++)
+		{
+			hashline[i][j] = hashcol[i][j] = hashzone[i][j] = 0;
+		}
+	}
     
-    for(i = 0; i < boardRowSize; i++)
-    {
-        for(j = 0; j < boardColSize; j++)
-        {
-            tmp = board[i][j];
-            if(tmp == '.')  continue;
-            else    tmp = tmp - '0';
-            
-            zone = (i / 3) * 3 + j / 3;
-            if(hashline[tmp][i]) return 0;
-            if(hashcol[tmp][j]) return 0;
-            if(hashzone[tmp][zone]) return 0;
-            
-            hashline[tmp][i] = hashcol[tmp][j] = hashzone[tmp][zone] = 1;
-        }
-    }
-    return 1;
+	for(i = 0; i < boardRowSize; i++)
+	{
+		for(j = 0; j < boardColSize; j++)
+		{
+			tmp = board[i][j];
+			if(tmp == '.')  continue;
+			else    tmp = tmp - '0';
+
+			zone = (i / 3) * 3 + j / 3;
+			if(hashline[tmp][i]) return 0;
+			if(hashcol[tmp][j]) return 0;
+			if(hashzone[tmp][zone]) return 0;
+
+			hashline[tmp][i] = hashcol[tmp][j] = hashzone[tmp][zone] = 1;
+		}
+	}
+	return 1;
 }
 
 void printsudoku(char** board, int boardRowSize, int boardColSize)
@@ -268,11 +268,11 @@ int main()
 	char l9[] = "....8..79";
 
 	char *sudoku[] = {l1, l2, l3, l4, l5, l6, l7, l8, l9};
-	
+
 	printsudoku(sudoku, 9, 9);
 	solveSudoku(sudoku, 9, 9);
 	printsudoku(sudoku, 9, 9);
-	
+
 	printf("\nis %s Sudoku\n", (isValidSudoku(sudoku, 9, 9))?"Valid":"not Valid");
 }
 
