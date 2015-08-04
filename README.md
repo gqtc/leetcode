@@ -28,3 +28,5 @@ https://leetcode.com
 13(34)Search for a Range: http://blog.csdn.net/gqtcgq/article/details/46966759
 
 14(37)Sudoku Solver: http://blog.csdn.net/gqtcgq/article/details/47112377
+
+15(41)First Missing Positive: http://blog.csdn.net/gqtcgq/article/details/47271965
