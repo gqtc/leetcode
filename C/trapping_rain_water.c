@@ -90,14 +90,12 @@ int trap(int* height, int heightSize)
 		}
 		else if(index < left)
 		{
-			minvalue = min(height[index], height[left]);
-			sum += minvalue * (left-index-1);
+			sum += height[index] * (left-index-1);
 			left = index;
 		}
 		else if(index > right)
 		{
-			minvalue = min(height[index], height[right]);
-			sum += minvalue * (index-right-1);
+			sum += height[index] * (index-right-1);
 			right = index;
 		}
 	}
