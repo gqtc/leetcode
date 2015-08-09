@@ -30,3 +30,5 @@ https://leetcode.com
 14(37)Sudoku Solver: http://blog.csdn.net/gqtcgq/article/details/47112377
 
 15(41)First Missing Positive: http://blog.csdn.net/gqtcgq/article/details/47271965
+
+16(42)Trapping Rain Water: http://blog.csdn.net/gqtcgq/article/details/47373531
