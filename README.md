@@ -34,3 +34,5 @@ https://leetcode.com
 16(42)Trapping Rain Water: http://blog.csdn.net/gqtcgq/article/details/47373531
 
 17(44)Wildcard Matching: http://blog.csdn.net/gqtcgq/article/details/47680075
+
+18(45)Jump Game II: http://blog.csdn.net/gqtcgq/article/details/47703135
