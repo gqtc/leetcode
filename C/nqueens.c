@@ -110,7 +110,8 @@ void nqueencore(char **board, int line, int n, QueenNode **head, int *listlen)
 	}
 }
 
-char ***nqueen(int n , int *returnsize)
+
+char*** solveNQueens(int n, int* returnSize)
 {
 	char **board = calloc(n, sizeof(char *));
 	int i, j;
@@ -136,7 +137,7 @@ char ***nqueen(int n , int *returnsize)
 		p = p->next;
 		free(q);
 	}
-	*returnsize = reslen;
+	*returnSize = reslen;
 
 	return res;
 }
@@ -146,7 +147,7 @@ int main(int argc, char **argv)
 	int n = atoi(argv[1]);
 	int reslen = 0;
 	char ***res = NULL;
-	res = nqueen(n, &reslen);
+	res = solveNQueens(n, &reslen);
 	int i, j;
 
 	printf("reslen is %d\n", reslen);
