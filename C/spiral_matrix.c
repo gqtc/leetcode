@@ -30,7 +30,7 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize)
     int index = 0;
     int reslen = matrixRowSize * matrixColSize;
 
-    k = 0;
+    k = 0;	//k表示第几层，0表示最外层
     i = j = k;
     while(index < reslen)
     {
@@ -38,30 +38,30 @@ int* spiralOrder(int** matrix, int matrixRowSize, int matrixColSize)
 	    
 		if(index == reslen) break;
 		
-		if(i == k)
+		if(i == k)	//up
 		{
 			j++;
 			if(j < matrixColSize-k)	continue;
 			j--;		
 		}
-		if(j == matrixColSize-1-k)
+		if(j == matrixColSize-1-k)	//right
 		{
 			i++;
 			if(i < matrixRowSize-k)	continue;
 			i--;	
 		}
 					
-		if(i == matrixRowSize-1-k)
+		if(i == matrixRowSize-1-k)	//bottom
 		{
 			j--;
 			if(j >= k)	continue;
 			j++;
 		}
 
-		if(j == k)
+		if(j == k)	//left
 		{
 			i--;
-			if(i == k)
+			if(i == k)	//i,j==k表示回到原点，本层处理完毕
 			{
 				i = j = ++k;
 			}
