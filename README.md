@@ -38,3 +38,5 @@ https://leetcode.com
 18(45)Jump Game II: http://blog.csdn.net/gqtcgq/article/details/47703135
 
 19(51)N-Queens: http://blog.csdn.net/gqtcgq/article/details/47859847
+
+20(59)Spiral Matrix II: http://blog.csdn.net/gqtcgq/article/details/47860055
