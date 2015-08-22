@@ -36,3 +36,5 @@ https://leetcode.com
 17(44)Wildcard Matching: http://blog.csdn.net/gqtcgq/article/details/47680075
 
 18(45)Jump Game II: http://blog.csdn.net/gqtcgq/article/details/47703135
+
+19(51)N-Queens: http://blog.csdn.net/gqtcgq/article/details/47859847
