@@ -39,4 +39,6 @@ https://leetcode.com
 
 19(51)N-Queens: http://blog.csdn.net/gqtcgq/article/details/47859847
 
-20(59)Spiral Matrix II: http://blog.csdn.net/gqtcgq/article/details/47860055
+20(56)Merge Intervals: http://blog.csdn.net/gqtcgq/article/details/47860899
+
+21(59)Spiral Matrix II: http://blog.csdn.net/gqtcgq/article/details/47860055
