@@ -44,3 +44,5 @@ https://leetcode.com
 21(57)Insert Interval: http://blog.csdn.net/gqtcgq/article/details/47903863
 
 22(59)Spiral Matrix II: http://blog.csdn.net/gqtcgq/article/details/47860055
+
+23(60)Permutation Sequence: http://blog.csdn.net/gqtcgq/article/details/47904995
