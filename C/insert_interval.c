@@ -47,7 +47,8 @@ struct Interval* insert(struct Interval* intervals, int intervalsSize, struct In
 		*returnSize = 1;
 		return res;
 	}
-	
+
+	//新插入节点与第一个元素的start进行比较
 	if(newInterval.start < intervals[0].start)
 	{
 		laststart = newInterval.start;
@@ -92,6 +93,7 @@ struct Interval* insert(struct Interval* intervals, int intervalsSize, struct In
 		}
 	}
 
+	//新插入节点的start比数组中所有元素的start都要大
 	if(flag == 0)
 	{
 		if(newInterval.start <= lastend)
@@ -117,8 +119,6 @@ struct Interval* insert(struct Interval* intervals, int intervalsSize, struct In
 	res = realloc(res, reslen*sizeof(struct Interval));
 	res[reslen-1].start = laststart;
 	res[reslen-1].end = lastend;
-
-
 
 	*returnSize = reslen;
 	return res;
