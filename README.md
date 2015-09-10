@@ -50,3 +50,5 @@ https://leetcode.com
 24(62,63)Unique Paths I II: http://blog.csdn.net/gqtcgq/article/details/47910841
 
 25(64)Minimum Path Sum: http://blog.csdn.net/gqtcgq/article/details/48350101
+
+26(68)Text Justification: http://blog.csdn.net/gqtcgq/article/details/48351845
