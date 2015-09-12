@@ -51,6 +51,6 @@ https://leetcode.com
 
 25(64)Minimum Path Sum: http://blog.csdn.net/gqtcgq/article/details/48350101
 
-26(66)Plus One: http://blog.csdn.net/gqtcgq/article/details/48392255
+26(68)Text Justification: http://blog.csdn.net/gqtcgq/article/details/48351845
 
-27(68)Text Justification: http://blog.csdn.net/gqtcgq/article/details/48351845
+27(69)Sqrt(x): http://blog.csdn.net/gqtcgq/article/details/48392255
