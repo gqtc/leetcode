@@ -54,3 +54,5 @@ https://leetcode.com
 26(68)Text Justification: http://blog.csdn.net/gqtcgq/article/details/48351845
 
 27(69)Sqrt(x): http://blog.csdn.net/gqtcgq/article/details/48392255
+
+28(73)Set Matrix Zeroes: http://blog.csdn.net/gqtcgq/article/details/48437671
