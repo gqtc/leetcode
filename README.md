@@ -56,3 +56,5 @@ https://leetcode.com
 27(69)Sqrt(x): http://blog.csdn.net/gqtcgq/article/details/48392255
 
 28(73)Set Matrix Zeroes: http://blog.csdn.net/gqtcgq/article/details/48437671
+
+29(75)Sort Colors: http://blog.csdn.net/gqtcgq/article/details/48466009
