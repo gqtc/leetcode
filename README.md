@@ -57,4 +57,6 @@ https://leetcode.com
 
 28(73)Set Matrix Zeroes: http://blog.csdn.net/gqtcgq/article/details/48437671
 
-29(75)Sort Colors: http://blog.csdn.net/gqtcgq/article/details/48466009
+29(74)Search a 2D Matrix: http://blog.csdn.net/gqtcgq/article/details/48492427
+
+30(75)Sort Colors: http://blog.csdn.net/gqtcgq/article/details/48466009
